@@ -60,55 +60,78 @@ section h6 {
     font-family: cursive;
     text-shadow: 4px 8px #00010a;
     text-align: center;
-    margin-bottom: 40px;
-    
-
+    margin-bottom: 40px;   
+}
+section img {
+    border-radius: 60px
 }
 h2{
     text-decoration: underline;
     font-family:  'Times New Roman';
 
 }
-
-section p {
+main{
+    background-color: var(--gray-footer);
+    margin: 0 auto;
+    padding: 20px;
+    align-items: center;
+}
+main p {
     font-family: cursive;
     font-size: 50px;
+    text-align: center;
 }
-section div img {
+
+main h2 {
+    font-size: 60px;
+    font-family: cursive;
+    text-shadow: 4px 8px #00010a;
+    text-align: center;
+    width: 100%;
+
+}
+main img {
     border-radius: 60px
 }
 #slide1{
-    height: 100vh;
+    position: absolute;
+    visibility: hidden;
     width: 300px;
-    float: left;
+    left: 0;
     background-color: var(--gray-footer);
     transform: translateX(-100%);
     transition: all .3s;
 }
 
 .miseho1 {
+    visibility: visible !important;
     transform: translateX(0) !important;
     transition: all .3s !important;
 }
 .miseho2 {
+    visibility: visible !important;
     transform: translateX(0) !important;
     transition: all .3s !important;
 }
 
 #slide1 p{
     font-size: 15px;
+    font-family: cursive
 }
 #slide2{
-    height: 100vh;
+    right: 0;
+    position: absolute;
+    visibility: hidden;
     width: 300px;
-    float: right;
     background-color: var(--gray-footer);
     transform: translateX(110%);
     transition: all .3s;
 }
 #slide2 p{
     font-size: 15px;
+    font-family: cursive;
 }
+
 footer{
     display: flex;
     justify-content: space-between;
